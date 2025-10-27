@@ -20,6 +20,8 @@ http.createServer((req, res) => {
         return;
     }
     if(parsedUrl.pathname === '/game'){
+        console.log(query)
+
         const query = querystring.parse(parsedUrl.query);
         const playerAction = query.action;
 
@@ -62,4 +64,4 @@ http.createServer((req, res) => {
 }).listen(8080, () => {
     console.log('服务器已启动，访问地址：http://localhost:8080');
 }
-
+)
