@@ -61,7 +61,7 @@ http.createServer((req, res) => {
     if(parsedUrl.pathname === '/'){
         fs.createReadStream('./index.html').pipe(res);
     }
-}).listen(3333, () => {
-    console.log('服务器已启动，访问地址：http://localhost:8080');
+}).listen(3334, () => {
+    console.log('服务器已启动，访问地址：http://localhost:3333');
 }
 )
